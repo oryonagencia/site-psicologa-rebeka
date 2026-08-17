@@ -1,0 +1,907 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Psicóloga em Palmas - TO | Rebeka Psicologia Clínica</title>
+    <meta name="description" content="Psicóloga em Palmas - TO. Especialista em Gênero, Maternidade e Autonomia. Atendimento clínico no Plano Diretor Sul. Agende sua consulta pelo WhatsApp!">
+    
+    <!-- SEO Meta Tags -->
+    <meta name="keywords" content="psicóloga em palmas, psicóloga luto perinatal palmas, terapia para mulheres em palmas, psicoterapia plano diretor sul palmas, atendimento psicológico maternidade palmas">
+    <link rel="canonical" href="https://rebekapsicologa.online/">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://rebekapsicologa.online/">
+    <meta property="og:title" content="Psicóloga em Palmas - TO | Rebeka Psicologia Clínica">
+    <meta property="og:description" content="Psicóloga em Palmas - TO. Especialista em Gênero, Maternidade e Autonomia. Atendimento clínico no Plano Diretor Sul. Agende sua consulta pelo WhatsApp!">
+    <meta property="og:image" content="https://rebekapsicologa.online/assets/img/hero-bg.webp">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://rebekapsicologa.online/">
+    <meta name="twitter:title" content="Psicóloga em Palmas - TO | Rebeka Psicologia Clínica">
+    <meta name="twitter:description" content="Psicóloga em Palmas - TO. Especialista em Gênero, Maternidade e Autonomia. Atendimento clínico no Plano Diretor Sul. Agende sua consulta pelo WhatsApp!">
+    <meta name="twitter:image" content="https://rebekapsicologa.online/assets/img/hero-bg.webp">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primaria: '#8E6A8F',      /* Ameixa suave */
+                        secundaria: '#A7B9A6',    /* Verde sálvia */
+                        terciaria: '#E7D7D7',     /* Rosa chá */
+                        nevoa: '#B9C3B4',         /* Névoa */
+                        fundo: '#F2E8E0',         /* Areia */
+                        texto: '#4A4A4A',         /* Grafite suave */
+                    },
+                    fontFamily: {
+                        titulo: ['"Playfair Display"', 'serif'],
+                        corpo: ['"Lora"', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Alpine.js -->
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
+    <style>
+        html { scroll-behavior: smooth; }
+        body { font-family: 'Lora', serif; color: #4A4A4A; background-color: #F2E8E0; }
+        h1, h2, h3, h4, h5, h6, .font-titulo { font-family: 'Playfair Display', serif; }
+        
+        .whatsapp-btn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 50;
+            background-color: #25D366;
+            color: white;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease;
+        }
+        .whatsapp-btn:hover {
+            transform: scale(1.1);
+        }
+        .whatsapp-icon {
+            width: 35px;
+            height: 35px;
+            fill: currentColor;
+        }
+    </style>
+
+    <!-- Schema Markup JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://rebekapsicologa.online/#organization",
+          "name": "Rebeka - Psicologia Clínica",
+          "url": "https://rebekapsicologa.online/",
+          "logo": "https://rebekapsicologa.online/assets/img/logo.png",
+          "sameAs": [
+            "https://www.instagram.com/rebekapalmas"
+          ]
+        },
+        {
+          "@type": "LocalBusiness",
+          "@id": "https://rebekapsicologa.online/#localbusiness",
+          "name": "Rebeka - Psicologia Clínica",
+          "image": "https://rebekapsicologa.online/assets/img/logo.png",
+          "url": "https://rebekapsicologa.online/",
+          "telephone": "+5563992123456",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Rua Q. 603 Sul, Alameda 7, Sala 102, Plano Diretor Sul",
+            "addressLocality": "Palmas",
+            "addressRegion": "TO",
+            "postalCode": "77020-024",
+            "addressCountry": "BR"
+          },
+          "openingHoursSpecification": {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+              "Monday",
+              "Tuesday",
+              "Wednesday",
+              "Thursday",
+              "Friday"
+            ],
+            "opens": "08:00",
+            "closes": "17:00"
+          },
+          "priceRange": "$$",
+          "areaServed": "Palmas - TO",
+          "parentOrganization": {
+            "@id": "https://rebekapsicologa.online/#organization"
+          }
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://rebekapsicologa.online/#website",
+          "url": "https://rebekapsicologa.online/",
+          "name": "Rebeka - Psicologia Clínica",
+          "publisher": {
+            "@id": "https://rebekapsicologa.online/#organization"
+          }
+        },
+        {
+          "@type": "FAQPage",
+          "@id": "https://rebekapsicologa.online/#faq",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Como agendar uma consulta com psicóloga em Palmas?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "O agendamento é feito de forma rápida e direta via WhatsApp. Basta clicar em qualquer botão da página, enviar uma mensagem e confirmaremos a disponibilidade de horário para você."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Onde fica localizado o consultório de psicologia?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Nosso consultório de psicologia está localizado na Rua Q. 603 Sul, Alameda 7, Sala 102, no Plano Diretor Sul de Palmas - TO. Um ponto de fácil acesso e com excelente estrutura de estacionamento e segurança."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Qual o valor da sessão com psicóloga em Palmas?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "O valor da sessão de psicoterapia segue os parâmetros de orientação do Conselho Federal de Psicologia. Ao entrar em contato pelo WhatsApp, informamos os valores atualizados e a modalidade de investimento."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "O atendimento é presencial no Plano Diretor Sul?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Sim, oferecemos atendimento presencial em nosso consultório privativo no Plano Diretor Sul de Palmas - TO, em um ambiente higienizado, silencioso e acolhedor."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Como funciona a terapia para maternidade e luto perinatal?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Trata-se de um acolhimento especializado voltado para as dores do pós-parto, ansiedade gestacional e processos de perda gestacional ou neonatal. O trabalho é conduzido com sensibilidade, empatia e validação da dor da mulher."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "O consultório aceita plano de saúde ou apenas particular?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Atuamos na modalidade de psicóloga particular em Palmas - TO para garantir um tempo de consulta adequado e atendimento individualizado. Emitimos recibo oficial para que você possa solicitar reembolso junto ao seu plano de saúde."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Qual a duração e a frequência das sessões de psicoterapia?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "As sessões têm duração média de 50 minutos e ocorrem semanalmente. A frequência pode ser reavaliada conforme a evolução e necessidade do processo terapêutico."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "A psicologia clínica atende casos de burnout e esgotamento de trabalho?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Sim, oferecemos acompanhamento focado no tratamento de burnout em Palmas e na terapia para esgotamento profissional, ajudando a restaurar o equilíbrio emocional e limites saudáveis na carreira."
+              }
+            }
+          ]
+        },
+        {
+          "@type": "Service",
+          "@id": "https://rebekapsicologa.online/#service-1",
+          "name": "Identidade e Ciclos da Vida",
+          "description": "Acompanhamento psicológico focado nas fases de transição, construção da identidade e maturidade emocional.",
+          "provider": {
+            "@id": "https://rebekapsicologa.online/#localbusiness"
+          },
+          "areaServed": "Palmas - TO"
+        },
+        {
+          "@type": "Service",
+          "@id": "https://rebekapsicologa.online/#service-2",
+          "name": "Maternidade e Luto Perinatal",
+          "description": "Suporte especializado para as vivências da maternidade, desafios emocionais do pós-parto e acolhimento sensível no luto perinatal.",
+          "provider": {
+            "@id": "https://rebekapsicologa.online/#localbusiness"
+          },
+          "areaServed": "Palmas - TO"
+        },
+        {
+          "@type": "Service",
+          "@id": "https://rebekapsicologa.online/#service-3",
+          "name": "Esgotamento e Relações de Trabalho",
+          "description": "Atendimento voltado para o alívio da sobrecarga mental, síndrome de burnout e superação do estresse no ambiente profissional.",
+          "provider": {
+            "@id": "https://rebekapsicologa.online/#localbusiness"
+          },
+          "areaServed": "Palmas - TO"
+        },
+        {
+          "@type": "Service",
+          "@id": "https://rebekapsicologa.online/#service-4",
+          "name": "Desenvolvimento de Autonomia",
+          "description": "Processo terapêutico direcionado ao fortalecimento da autoestima, quebra de inseguranças e independência emocional.",
+          "provider": {
+            "@id": "https://rebekapsicologa.online/#localbusiness"
+          },
+          "areaServed": "Palmas - TO"
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": "https://rebekapsicologa.online/#breadcrumb",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://rebekapsicologa.online/"
+            }
+          ]
+        }
+      ]
+    }
+    </script>
+</head>
+<body class="antialiased text-texto">
+
+    <!-- Header / Sticky Menu -->
+    <header class="fixed w-full top-0 z-40 bg-fundo/95 backdrop-blur-md shadow-sm border-b border-primaria/10" x-data="{ open: false }">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo -->
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="#" class="font-titulo text-2xl font-bold text-primaria flex items-center gap-2">
+                        <!-- Placeholder Logo -->
+                        <img src="assets/img/logo.png" alt="Rebeka Psicologia Clínica" class="h-10 w-auto" onerror="this.style.display='none'">
+                        <span>Rebeka</span>
+                    </a>
+                </div>
+                
+                <!-- Desktop Menu -->
+                <nav class="hidden md:flex space-x-8">
+                    <a href="#sobre" class="text-texto hover:text-primaria font-medium transition-colors">Quem Somos</a>
+                    <a href="#servicos" class="text-texto hover:text-primaria font-medium transition-colors">Serviços</a>
+                    <a href="#beneficios" class="text-texto hover:text-primaria font-medium transition-colors">Benefícios</a>
+                    <a href="#depoimentos" class="text-texto hover:text-primaria font-medium transition-colors">Depoimentos</a>
+                    <a href="#faq" class="text-texto hover:text-primaria font-medium transition-colors">FAQ</a>
+                    <a href="#contato" class="text-texto hover:text-primaria font-medium transition-colors">Contato</a>
+                </nav>
+
+                <!-- CTA Botão Menu -->
+                <div class="hidden md:flex items-center">
+                    <a href="https://wa.me/5563992123456" target="_blank" class="bg-primaria hover:bg-opacity-90 text-white px-6 py-2.5 rounded-full font-medium transition-all shadow-md">Agendar Consulta</a>
+                </div>
+
+                <!-- Mobile menu button -->
+                <div class="flex items-center md:hidden">
+                    <button @click="open = !open" class="text-texto hover:text-primaria focus:outline-none">
+                        <svg class="h-6 w-6" x-show="!open" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                        <svg class="h-6 w-6" x-show="open" style="display:none;" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div x-show="open" style="display:none;" x-transition class="md:hidden bg-white shadow-xl absolute w-full border-t border-gray-100">
+            <div class="px-4 pt-2 pb-4 space-y-1">
+                <a href="#sobre" @click="open = false" class="block px-3 py-3 text-texto hover:bg-fundo rounded-md font-medium">Quem Somos</a>
+                <a href="#servicos" @click="open = false" class="block px-3 py-3 text-texto hover:bg-fundo rounded-md font-medium">Serviços</a>
+                <a href="#beneficios" @click="open = false" class="block px-3 py-3 text-texto hover:bg-fundo rounded-md font-medium">Benefícios</a>
+                <a href="#depoimentos" @click="open = false" class="block px-3 py-3 text-texto hover:bg-fundo rounded-md font-medium">Depoimentos</a>
+                <a href="#faq" @click="open = false" class="block px-3 py-3 text-texto hover:bg-fundo rounded-md font-medium">FAQ</a>
+                <a href="#contato" @click="open = false" class="block px-3 py-3 text-texto hover:bg-fundo rounded-md font-medium">Contato</a>
+                <div class="pt-2">
+                    <a href="https://wa.me/5563992123456" target="_blank" class="block text-center bg-primaria text-white px-3 py-3 rounded-md font-bold">Agendar Consulta</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="pt-20">
+
+        <!-- 1. Hero Section -->
+        <section id="hero" class="relative bg-white overflow-hidden">
+            <div class="absolute inset-0 z-0">
+                <img src="assets/img/hero-bg.webp" alt="Consultório de Psicologia em Palmas" class="w-full h-full object-cover" loading="lazy">
+                <div class="absolute inset-0 bg-gradient-to-r from-fundo via-fundo/90 to-fundo/40"></div>
+            </div>
+            <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-32 flex flex-col justify-center min-h-[90vh]">
+                <div class="w-full lg:w-2/3 xl:w-3/5">
+                    <span class="inline-block py-1.5 px-4 rounded-full bg-secundaria/20 text-primaria font-semibold text-sm mb-6 uppercase tracking-wider">Psicologia Clínica • Terapia de adultos</span>
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-primaria leading-tight mb-6">
+                        Psicóloga em Palmas: Psicologia Clínica Especializada para Mulheres
+                    </h1>
+                    <p class="text-lg sm:text-xl text-texto mb-10 max-w-2xl leading-relaxed">
+                        Oferecemos um espaço seguro e acolhedor no Plano Diretor Sul para você superar angústias, esgotamento e desafios da maternidade. Fortaleça sua autonomia emocional e retome o controle da sua vida com acompanhamento psicológico especializado em Palmas - TO.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 mb-6">
+                        <a href="https://wa.me/5563992123456" target="_blank" class="inline-flex justify-center items-center px-8 py-4 border border-transparent text-lg font-medium rounded-full text-white bg-primaria hover:bg-primaria/90 shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-1">
+                            Agendar pelo WhatsApp
+                        </a>
+                        <a href="#servicos" class="inline-flex justify-center items-center px-8 py-4 border-2 border-primaria text-lg font-medium rounded-full text-primaria bg-transparent hover:bg-primaria hover:text-white transition-all">
+                            Conhecer nossos serviços
+                        </a>
+                    </div>
+                    <p class="text-sm text-texto/80 font-medium flex items-center gap-2">
+                        <svg class="w-4 h-4 text-secundaria" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                        Atendimento presencial no Plano Diretor Sul • Resposta rápida em até 30 minutos
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. Barra de Credibilidade -->
+        <section id="credibilidade" class="bg-secundaria py-10">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 text-center divide-y sm:divide-y-0 sm:divide-x divide-white/20">
+                    <div class="flex flex-col items-center justify-center p-4">
+                        <span class="text-4xl font-titulo font-bold text-white mb-2">+300</span>
+                        <p class="text-white/90 text-sm font-medium leading-relaxed">mulheres acolhidas em Palmas - TO</p>
+                    </div>
+                    <div class="flex flex-col items-center justify-center p-4 pt-8 sm:pt-4">
+                        <div class="w-12 h-12 rounded-full bg-white/20 flex items-center justify-center mb-4">
+                            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path></svg>
+                        </div>
+                        <p class="text-white/90 text-sm font-medium leading-relaxed">Atendimento ético, sigiloso e totalmente livre de julgamentos</p>
+                    </div>
+                    <div class="flex flex-col items-center justify-center p-4 pt-8 sm:pt-4">
+                        <div class="w-12 h-12 rounded-full bg-white/20 flex items-center justify-center mb-4">
+                            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg>
+                        </div>
+                        <p class="text-white/90 text-sm font-medium leading-relaxed">Especialista em Gênero, Maternidade e Autonomia Emocional</p>
+                    </div>
+                    <div class="flex flex-col items-center justify-center p-4 pt-8 sm:pt-4">
+                        <div class="w-12 h-12 rounded-full bg-white/20 flex items-center justify-center mb-4">
+                            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                        </div>
+                        <p class="text-white/90 text-sm font-medium leading-relaxed">Localização central e privativa no Plano Diretor Sul</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. Seção "Quem Somos" -->
+        <section id="sobre" class="py-24 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex flex-col lg:flex-row items-center gap-16">
+                    <div class="w-full lg:w-1/2 relative">
+                        <div class="absolute inset-0 bg-secundaria/20 rounded-3xl transform translate-x-4 translate-y-4"></div>
+                        <img src="assets/img/sobre.webp" alt="Acolhimento Ético e Humanizado" class="relative rounded-3xl shadow-xl w-full h-auto object-cover" loading="lazy">
+                    </div>
+                    <div class="w-full lg:w-1/2">
+                        <h2 class="text-3xl sm:text-4xl font-bold text-primaria mb-4 leading-snug">Acolhimento Ético e Humanizado em Palmas - TO</h2>
+                        <h3 class="text-xl font-medium text-secundaria mb-8">Foco em Gênero, Maternidade e Autonomia Emocional</h3>
+                        
+                        <div class="space-y-5 text-texto text-lg leading-relaxed">
+                            <p>A Rebeka Psicologia Clínica nasceu da necessidade de oferecer às mulheres de Palmas um ambiente terapêutico pautado na escuta qualificada, ética e verdadeiramente empática. Em um cotidiano repleto de cobranças e sobrecargas, construir um espaço de desaceleração e autoconhecimento é fundamental para a saúde mental.</p>
+                            <p>Como psicóloga especialista em mulheres em Palmas, atuo na interseção entre gênero, maternidade, relações de trabalho e autonomia. O trabalho terapêutico é focado no respeito à individualidade de cada paciente, auxiliando na ressignificação de dores, na travessia de transições difíceis e na redescoberta do próprio valor.</p>
+                            <p>Seja para enfrentar o esgotamento profissional, vivenciar o luto perinatal ou fortalecer sua independência emocional, nosso consultório de psicologia no Plano Diretor Sul está pronto para receber você com total sigilo e acolhimento.</p>
+                        </div>
+                        
+                        <div class="mt-10">
+                            <a href="#contato" class="inline-flex justify-center items-center px-8 py-4 border border-transparent text-lg font-bold rounded-full text-primaria bg-terciaria hover:bg-primaria hover:text-white transition-all shadow-md">
+                                Fale conosco
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. Seção de Serviços -->
+        <section id="servicos" class="py-24 bg-fundo">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-3xl mx-auto mb-16">
+                    <span class="text-secundaria font-bold tracking-widest uppercase text-sm mb-2 block">Nossas Especialidades</span>
+                    <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-primaria mb-6">Áreas de Atuação e Especialidades Terapêuticas</h2>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+                    
+                    <!-- Card 1 -->
+                    <div class="bg-white rounded-3xl p-8 border border-gray-100 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+                        <img src="assets/img/servico-1.webp" alt="Identidade e Ciclos da Vida" class="w-full h-56 object-cover rounded-2xl mb-8" loading="lazy">
+                        <h3 class="text-2xl font-bold text-primaria mb-4">Identidade e Ciclos da Vida</h3>
+                        <p class="text-texto mb-8 leading-relaxed">Acompanhamento psicológico focado nas fases de transição, construção da identidade e maturidade emocional. Auxiliamos na travessia de momentos de mudança, crises existenciais e reorganização de objetivos pessoais com apoio da terapia para mulheres em Palmas.</p>
+                        <a href="https://wa.me/5563992123456?text=Olá,%20gostaria%20de%20saber%20mais%20sobre%20o%20atendimento%20para%20Identidade%20e%20Ciclos%20da%20Vida." target="_blank" class="inline-flex items-center text-secundaria font-bold hover:text-primaria transition-colors text-lg">
+                            Falar no WhatsApp <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                        </a>
+                    </div>
+                    
+                    <!-- Card 2 -->
+                    <div class="bg-white rounded-3xl p-8 border border-gray-100 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+                        <img src="assets/img/servico-2.webp" alt="Maternidade e Luto Perinatal" class="w-full h-56 object-cover rounded-2xl mb-8" loading="lazy">
+                        <h3 class="text-2xl font-bold text-primaria mb-4">Maternidade e Luto Perinatal</h3>
+                        <p class="text-texto mb-8 leading-relaxed">Suporte especializado para as vivências da maternidade, desafios emocionais da gestação, psicoterapia para depressão pós-parto e acolhimento sensível no luto perinatal. Um atendimento psicológico para maternidade em Palmas feito com empatia e profundo respeito.</p>
+                        <a href="https://wa.me/5563992123456?text=Olá,%20gostaria%20de%20saber%20mais%20sobre%20o%20suporte%20em%20Maternidade%20e%20Luto%20Perinatal." target="_blank" class="inline-flex items-center text-secundaria font-bold hover:text-primaria transition-colors text-lg">
+                            Falar no WhatsApp <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                        </a>
+                    </div>
+                    
+                    <!-- Card 3 -->
+                    <div class="bg-white rounded-3xl p-8 border border-gray-100 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+                        <img src="assets/img/servico-3.webp" alt="Esgotamento e Relações de Trabalho" class="w-full h-56 object-cover rounded-2xl mb-8" loading="lazy">
+                        <h3 class="text-2xl font-bold text-primaria mb-4">Esgotamento e Relações de Trabalho</h3>
+                        <p class="text-texto mb-8 leading-relaxed">Atendimento voltado para o alívio da sobrecarga mental, estresse corporativo e tratamento de burnout em Palmas. Recupere o equilíbrio entre a vida pessoal e profissional superando a exaustão acumulada com a terapia para esgotamento profissional.</p>
+                        <a href="https://wa.me/5563992123456?text=Olá,%20gostaria%20de%20saber%20mais%20sobre%20o%20atendimento%20para%20Esgotamento%20e%20Relações%20de%20Trabalho." target="_blank" class="inline-flex items-center text-secundaria font-bold hover:text-primaria transition-colors text-lg">
+                            Falar no WhatsApp <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                        </a>
+                    </div>
+                    
+                    <!-- Card 4 -->
+                    <div class="bg-white rounded-3xl p-8 border border-gray-100 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+                        <img src="assets/img/servico-4.webp" alt="Desenvolvimento de Autonomia" class="w-full h-56 object-cover rounded-2xl mb-8" loading="lazy">
+                        <h3 class="text-2xl font-bold text-primaria mb-4">Desenvolvimento de Autonomia</h3>
+                        <p class="text-texto mb-8 leading-relaxed">Processo terapêutico direcionado ao fortalecimento da autoestima, superação de inseguranças e independência emocional. Uma abordagem clínica voltada para a desconstrução de padrões limitantes e consolidação da sua voz no mundo.</p>
+                        <a href="https://wa.me/5563992123456?text=Olá,%20gostaria%20de%20saber%20mais%20sobre%20o%20processo%20de%20Desenvolvimento%20de%20Autonomia." target="_blank" class="inline-flex items-center text-secundaria font-bold hover:text-primaria transition-colors text-lg">
+                            Falar no WhatsApp <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="text-center bg-primaria text-white p-10 rounded-3xl max-w-4xl mx-auto shadow-xl relative overflow-hidden">
+                    <div class="absolute top-0 right-0 -mt-10 -mr-10 w-40 h-40 bg-white opacity-10 rounded-full blur-2xl"></div>
+                    <div class="absolute bottom-0 left-0 -mb-10 -ml-10 w-40 h-40 bg-white opacity-10 rounded-full blur-2xl"></div>
+                    <p class="text-xl md:text-2xl mb-8 font-medium relative z-10">Dúvidas sobre qual atendimento é ideal para o seu momento?<br>Fale diretamente conosco para orientações personalizadas.</p>
+                    <a href="https://wa.me/5563992123456" target="_blank" class="inline-flex justify-center items-center px-10 py-4 border border-transparent text-lg font-bold rounded-full text-primaria bg-white hover:bg-fundo shadow-lg transition-all relative z-10">
+                        Agendar Consulta via WhatsApp
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. Seção de Benefícios -->
+        <section id="beneficios" class="py-24 bg-white relative overflow-hidden">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-primaria mb-20 text-center">Um Espaço Seguro e Livre de Julgamentos</h2>
+                
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                    <div class="space-y-10">
+                        
+                        <div class="flex gap-6">
+                            <div class="flex-shrink-0 mt-1">
+                                <div class="w-14 h-14 rounded-2xl bg-terciaria flex items-center justify-center text-primaria shadow-sm">
+                                    <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg>
+                                </div>
+                            </div>
+                            <div>
+                                <h3 class="text-2xl font-bold text-primaria mb-3">Escuta Clínica Sem Julgamentos</h3>
+                                <p class="text-texto text-lg leading-relaxed">Um ambiente estritamente sigiloso e acolhedor onde todas as suas vivências e sentimentos são recebidos com respeito e fundamentação ética.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex gap-6">
+                            <div class="flex-shrink-0 mt-1">
+                                <div class="w-14 h-14 rounded-2xl bg-terciaria flex items-center justify-center text-primaria shadow-sm">
+                                    <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"></path></svg>
+                                </div>
+                            </div>
+                            <div>
+                                <h3 class="text-2xl font-bold text-primaria mb-3">Foco nas Demandas Femininas</h3>
+                                <p class="text-texto text-lg leading-relaxed">Atendimento especializado pautado nas interseções de gênero, maternidade, sobrecarga e desenvolvimento da autonomia feminina.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex gap-6">
+                            <div class="flex-shrink-0 mt-1">
+                                <div class="w-14 h-14 rounded-2xl bg-terciaria flex items-center justify-center text-primaria shadow-sm">
+                                    <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"></path></svg>
+                                </div>
+                            </div>
+                            <div>
+                                <h3 class="text-2xl font-bold text-primaria mb-3">Fortalecimento do Protagonismo</h3>
+                                <p class="text-texto text-lg leading-relaxed">Abordagem terapêutica voltada para a redescoberta dos seus recursos internos, reconstrução da autoestima e independência emocional.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex gap-6">
+                            <div class="flex-shrink-0 mt-1">
+                                <div class="w-14 h-14 rounded-2xl bg-terciaria flex items-center justify-center text-primaria shadow-sm">
+                                    <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                                </div>
+                            </div>
+                            <div>
+                                <h3 class="text-2xl font-bold text-primaria mb-3">Localização Estratégica em Palmas</h3>
+                                <p class="text-texto text-lg leading-relaxed">Consultório privativo e confortável no Plano Diretor Sul, oferecendo fácil acesso, praticidade e total discrição para a sua rotina.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="w-full relative">
+                        <div class="absolute inset-0 bg-secundaria/10 rounded-[3rem] transform -rotate-3 scale-105 z-0"></div>
+                        <img src="assets/img/beneficios.webp" alt="Espaço Seguro e Livre de Julgamentos" class="rounded-[2.5rem] shadow-2xl w-full h-auto object-cover relative z-10" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. Como Funciona / Processo -->
+        <section id="como-funciona" class="py-24 bg-fundo">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-primaria mb-20 text-center">Como Funciona o Atendimento Psicológico</h2>
+                
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-10 relative">
+                    
+                    <div class="hidden md:block absolute top-12 left-[12.5%] right-[12.5%] h-0.5 bg-terciaria z-0"></div>
+
+                    <div class="text-center relative z-10 group">
+                        <div class="w-24 h-24 bg-white border-4 border-terciaria rounded-full flex items-center justify-center text-primaria text-3xl font-bold mx-auto mb-8 shadow-lg group-hover:scale-110 group-hover:border-primaria transition-all duration-300">1</div>
+                        <h3 class="text-xl font-bold text-primaria mb-4">Contato Inicial via WhatsApp</h3>
+                        <p class="text-texto leading-relaxed">Você clica em qualquer botão de agendamento na página e conversa diretamente conosco para tirar dúvidas iniciais e conferir os horários disponíveis.</p>
+                    </div>
+
+                    <div class="text-center relative z-10 group">
+                        <div class="w-24 h-24 bg-white border-4 border-terciaria rounded-full flex items-center justify-center text-primaria text-3xl font-bold mx-auto mb-8 shadow-lg group-hover:scale-110 group-hover:border-primaria transition-all duration-300">2</div>
+                        <h3 class="text-xl font-bold text-primaria mb-4">Alinhamento e Agendamento</h3>
+                        <p class="text-texto leading-relaxed">Definimos o melhor dia e horário para a sua consulta inicial, com orientações claras sobre o funcionamento do atendimento presencial particular.</p>
+                    </div>
+
+                    <div class="text-center relative z-10 group">
+                        <div class="w-24 h-24 bg-white border-4 border-terciaria rounded-full flex items-center justify-center text-primaria text-3xl font-bold mx-auto mb-8 shadow-lg group-hover:scale-110 group-hover:border-primaria transition-all duration-300">3</div>
+                        <h3 class="text-xl font-bold text-primaria mb-4">Primeira Consulta Presencial</h3>
+                        <p class="text-texto leading-relaxed">Nos encontramos no consultório no Plano Diretor Sul para acolher suas demandas e estruturar os objetivos do seu acompanhamento psicológico.</p>
+                    </div>
+
+                    <div class="text-center relative z-10 group">
+                        <div class="w-24 h-24 bg-white border-4 border-terciaria rounded-full flex items-center justify-center text-primaria text-3xl font-bold mx-auto mb-8 shadow-lg group-hover:scale-110 group-hover:border-primaria transition-all duration-300">4</div>
+                        <h3 class="text-xl font-bold text-primaria mb-4">Processo Contínuo de Transformação</h3>
+                        <p class="text-texto leading-relaxed">Sessões semanais focadas na evolução do seu bem-estar, alívio de angústias e fortalecimento da sua autonomia e saúde mental.</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- 7. Prova Social / Depoimentos -->
+        <section id="depoimentos" class="py-24 bg-primaria relative overflow-hidden">
+            <div class="absolute inset-0 opacity-10 bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0MCIgaGVpZ2h0PSI0MCI+CjxwYXRoIGQ9Ik0wIDBoNDB2NDBIMHoiIGZpbGw9Im5vbmUiLz4KPHBhdGggZD0iTTIwIDIwYy0xMS4wNDYgMC0yMC04Ljk1NC0yMC0yMHM4Ljk1NC0yMCAyMC0yMCAyMCA4Ljk1NCAyMCAyMC04Ljk1NCAyMC0yMCAyMHoiIGZpbGw9IiNmZmYiIGZpbGwtb3BhY2l0eT0iLjA1Ii8+Cjwvc3ZnPg==')]"></div>
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-20 text-center">Histórias de Transformação e Fortalecimento</h2>
+                
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                    
+                    <div class="bg-white rounded-3xl p-10 shadow-xl relative mt-4 md:mt-0 transform transition duration-300 hover:-translate-y-2 hover:shadow-2xl">
+                        <div class="absolute -top-6 left-10 w-12 h-12 bg-secundaria rounded-full flex items-center justify-center text-white text-3xl font-serif">"</div>
+                        <p class="text-texto italic mb-8 text-lg leading-relaxed pt-2">Cheguei ao consultório em um momento de intenso esgotamento profissional e desamparo. O acolhimento humanizado me permitiu reordenar minhas prioridades e resgatar minha saúde mental sem me sentir culpada.</p>
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 bg-fundo rounded-full flex items-center justify-center text-primaria font-bold text-xl">P</div>
+                            <div>
+                                <p class="font-bold text-primaria">Paciente de Psicoterapia Individual</p>
+                                <p class="text-sm text-gray-500">Plano Diretor Sul, Palmas</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-3xl p-10 shadow-xl relative mt-4 md:mt-0 transform transition duration-300 hover:-translate-y-2 hover:shadow-2xl">
+                        <div class="absolute -top-6 left-10 w-12 h-12 bg-secundaria rounded-full flex items-center justify-center text-white text-3xl font-serif">"</div>
+                        <p class="text-texto italic mb-8 text-lg leading-relaxed pt-2">O suporte durante a gestação e no pós-parto foi fundamental para lidar com as inseguranças da maternidade. Encontrei um espaço ético e acolhedor onde me senti verdadeiramente escutada.</p>
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 bg-fundo rounded-full flex items-center justify-center text-primaria font-bold text-xl">P</div>
+                            <div>
+                                <p class="font-bold text-primaria">Paciente de Acolhimento à Maternidade</p>
+                                <p class="text-sm text-gray-500">Palmas - TO</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-3xl p-10 shadow-xl relative mt-4 md:mt-0 transform transition duration-300 hover:-translate-y-2 hover:shadow-2xl">
+                        <div class="absolute -top-6 left-10 w-12 h-12 bg-secundaria rounded-full flex items-center justify-center text-white text-3xl font-serif">"</div>
+                        <p class="text-texto italic mb-8 text-lg leading-relaxed pt-2">A terapia voltada para a autonomia transformou a maneira como me posiciono nos meus relacionamentos e na carreira. Foi o investimento mais importante na minha qualidade de vida.</p>
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 bg-fundo rounded-full flex items-center justify-center text-primaria font-bold text-xl">P</div>
+                            <div>
+                                <p class="font-bold text-primaria">Paciente de Psicologia Clínica</p>
+                                <p class="text-sm text-gray-500">Palmas - TO</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- 8. Bloco SEO Local / Área de Atuação -->
+        <section id="area-atuacao" class="py-24 bg-fundo">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="bg-white rounded-[2.5rem] shadow-xl overflow-hidden flex flex-col lg:flex-row">
+                    
+                    <div class="p-10 lg:p-16 w-full lg:w-1/2 flex flex-col justify-center">
+                        <h2 class="text-3xl sm:text-4xl font-bold text-primaria mb-8">Atendimento Psicológico no Plano Diretor Sul de Palmas - TO</h2>
+                        <div class="space-y-6 text-texto text-lg mb-10 leading-relaxed">
+                            <p>A Rebeka Psicologia Clínica está estrategicamente localizada no Plano Diretor Sul de Palmas, proporcionando um ambiente tranquilo, seguro e de fácil acesso para moradoras de todas as regiões da capital tocantinense.</p>
+                            <p>Atendemos presencialmente residentes dos bairros Plano Diretor Sul, Plano Diretor Norte, Graciosa, Arse, Arso, Arne e de toda a cidade de Palmas - TO, garantindo rigoroso sigilo ético e pontualidade.</p>
+                        </div>
+                        
+                        <div class="space-y-6 bg-fundo/80 p-8 rounded-3xl border border-terciaria/50">
+                            <div class="flex items-start gap-4">
+                                <div class="bg-white p-2 rounded-full shadow-sm">
+                                    <svg class="w-6 h-6 text-primaria" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                                </div>
+                                <div class="pt-1">
+                                    <p class="font-bold text-primaria">Endereço:</p>
+                                    <p class="text-texto mt-1">Rua Q. 603 Sul, Alameda 7, Sala 102, Plano Diretor Sul - CEP: 77020-024, Palmas - TO</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-4">
+                                <div class="bg-white p-2 rounded-full shadow-sm">
+                                    <svg class="w-6 h-6 text-primaria" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                </div>
+                                <div class="pt-1">
+                                    <p class="font-bold text-primaria">Horário de Atendimento:</p>
+                                    <p class="text-texto mt-1">Segunda a Sexta-feira, das 08:00 às 17:00</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-4">
+                                <div class="bg-white p-2 rounded-full shadow-sm">
+                                    <svg class="w-6 h-6 text-primaria" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+                                </div>
+                                <div class="pt-1">
+                                    <p class="font-bold text-primaria">Telefone / WhatsApp:</p>
+                                    <p class="text-texto mt-1">(63) 99212-3456</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="w-full lg:w-1/2 min-h-[400px] bg-nevoa/20 relative">
+                        <!-- Placeholder: Google Maps Iframe -->
+                        <div class="absolute inset-0 flex items-center justify-center bg-gray-50 text-gray-400 text-sm p-8 text-center border-4 border-dashed border-gray-200 m-8 rounded-3xl">
+                            <div>
+                                <svg class="w-16 h-16 mx-auto mb-4 text-gray-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"></path></svg>
+                                <p class="font-bold text-lg text-gray-500 mb-2">[Placeholder: Google Maps Iframe]</p>
+                                <p>Substitua este elemento pelo iframe real do Google Maps apontando para o Plano Diretor Sul, Palmas - TO.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- 9. FAQ Estratégico -->
+        <section id="faq" class="py-24 bg-white" x-data="{ active: null }">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-primaria mb-16 text-center">Perguntas Frequentes sobre Psicologia Clínica em Palmas</h2>
+                
+                <div class="space-y-4">
+                    
+                    <div class="border border-gray-200 rounded-2xl overflow-hidden shadow-sm">
+                        <button @click="active !== 1 ? active = 1 : active = null" class="w-full text-left px-8 py-6 bg-white hover:bg-fundo/50 focus:outline-none flex justify-between items-center transition-colors">
+                            <span class="font-bold text-lg text-primaria pr-4">1. Como agendar uma consulta com psicóloga em Palmas?</span>
+                            <svg class="w-6 h-6 text-secundaria transform transition-transform duration-300 flex-shrink-0" :class="{ 'rotate-180': active === 1 }" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </button>
+                        <div x-show="active === 1" x-collapse style="display: none;" class="px-8 pb-6 bg-white text-texto text-lg border-t border-gray-50 pt-4">
+                            O agendamento é feito de forma rápida e direta via WhatsApp. Basta clicar em qualquer botão da página, enviar uma mensagem e confirmaremos a disponibilidade de horário para você.
+                        </div>
+                    </div>
+
+                    <div class="border border-gray-200 rounded-2xl overflow-hidden shadow-sm">
+                        <button @click="active !== 2 ? active = 2 : active = null" class="w-full text-left px-8 py-6 bg-white hover:bg-fundo/50 focus:outline-none flex justify-between items-center transition-colors">
+                            <span class="font-bold text-lg text-primaria pr-4">2. Onde fica localizado o consultório de psicologia?</span>
+                            <svg class="w-6 h-6 text-secundaria transform transition-transform duration-300 flex-shrink-0" :class="{ 'rotate-180': active === 2 }" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </button>
+                        <div x-show="active === 2" x-collapse style="display: none;" class="px-8 pb-6 bg-white text-texto text-lg border-t border-gray-50 pt-4">
+                            Nosso consultório de psicologia está localizado na Rua Q. 603 Sul, Alameda 7, Sala 102, no Plano Diretor Sul de Palmas - TO. Um ponto de fácil acesso e com excelente estrutura de estacionamento e segurança.
+                        </div>
+                    </div>
+
+                    <div class="border border-gray-200 rounded-2xl overflow-hidden shadow-sm">
+                        <button @click="active !== 3 ? active = 3 : active = null" class="w-full text-left px-8 py-6 bg-white hover:bg-fundo/50 focus:outline-none flex justify-between items-center transition-colors">
+                            <span class="font-bold text-lg text-primaria pr-4">3. Qual o valor da sessão com psicóloga em Palmas?</span>
+                            <svg class="w-6 h-6 text-secundaria transform transition-transform duration-300 flex-shrink-0" :class="{ 'rotate-180': active === 3 }" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </button>
+                        <div x-show="active === 3" x-collapse style="display: none;" class="px-8 pb-6 bg-white text-texto text-lg border-t border-gray-50 pt-4">
+                            O valor da sessão de psicoterapia segue os parâmetros de orientação do Conselho Federal de Psicologia. Ao entrar em contato pelo WhatsApp, informamos os valores atualizados e a modalidade de investimento.
+                        </div>
+                    </div>
+
+                    <div class="border border-gray-200 rounded-2xl overflow-hidden shadow-sm">
+                        <button @click="active !== 4 ? active = 4 : active = null" class="w-full text-left px-8 py-6 bg-white hover:bg-fundo/50 focus:outline-none flex justify-between items-center transition-colors">
+                            <span class="font-bold text-lg text-primaria pr-4">4. O atendimento é presencial no Plano Diretor Sul?</span>
+                            <svg class="w-6 h-6 text-secundaria transform transition-transform duration-300 flex-shrink-0" :class="{ 'rotate-180': active === 4 }" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </button>
+                        <div x-show="active === 4" x-collapse style="display: none;" class="px-8 pb-6 bg-white text-texto text-lg border-t border-gray-50 pt-4">
+                            Sim, oferecemos atendimento presencial em nosso consultório privativo no Plano Diretor Sul de Palmas - TO, em um ambiente higienizado, silencioso e acolhedor.
+                        </div>
+                    </div>
+
+                    <div class="border border-gray-200 rounded-2xl overflow-hidden shadow-sm">
+                        <button @click="active !== 5 ? active = 5 : active = null" class="w-full text-left px-8 py-6 bg-white hover:bg-fundo/50 focus:outline-none flex justify-between items-center transition-colors">
+                            <span class="font-bold text-lg text-primaria pr-4">5. Como funciona a terapia para maternidade e luto perinatal?</span>
+                            <svg class="w-6 h-6 text-secundaria transform transition-transform duration-300 flex-shrink-0" :class="{ 'rotate-180': active === 5 }" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </button>
+                        <div x-show="active === 5" x-collapse style="display: none;" class="px-8 pb-6 bg-white text-texto text-lg border-t border-gray-50 pt-4">
+                            Trata-se de um acolhimento especializado voltado para as dores do pós-parto, ansiedade gestacional e processos de perda gestacional ou neonatal. O trabalho é conduzido com sensibilidade, empatia e validação da dor da mulher.
+                        </div>
+                    </div>
+
+                    <div class="border border-gray-200 rounded-2xl overflow-hidden shadow-sm">
+                        <button @click="active !== 6 ? active = 6 : active = null" class="w-full text-left px-8 py-6 bg-white hover:bg-fundo/50 focus:outline-none flex justify-between items-center transition-colors">
+                            <span class="font-bold text-lg text-primaria pr-4">6. O consultório aceita plano de saúde ou apenas particular?</span>
+                            <svg class="w-6 h-6 text-secundaria transform transition-transform duration-300 flex-shrink-0" :class="{ 'rotate-180': active === 6 }" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </button>
+                        <div x-show="active === 6" x-collapse style="display: none;" class="px-8 pb-6 bg-white text-texto text-lg border-t border-gray-50 pt-4">
+                            Atuamos na modalidade de psicóloga particular em Palmas - TO para garantir um tempo de consulta adequado e atendimento individualizado. Emitimos recibo oficial para que você possa solicitar reembolso junto ao seu plano de saúde.
+                        </div>
+                    </div>
+
+                    <div class="border border-gray-200 rounded-2xl overflow-hidden shadow-sm">
+                        <button @click="active !== 7 ? active = 7 : active = null" class="w-full text-left px-8 py-6 bg-white hover:bg-fundo/50 focus:outline-none flex justify-between items-center transition-colors">
+                            <span class="font-bold text-lg text-primaria pr-4">7. Qual a duração e a frequência das sessões de psicoterapia?</span>
+                            <svg class="w-6 h-6 text-secundaria transform transition-transform duration-300 flex-shrink-0" :class="{ 'rotate-180': active === 7 }" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </button>
+                        <div x-show="active === 7" x-collapse style="display: none;" class="px-8 pb-6 bg-white text-texto text-lg border-t border-gray-50 pt-4">
+                            As sessões têm duração média de 50 minutos e ocorrem semanalmente. A frequência pode ser reavaliada conforme a evolução e necessidade do processo terapêutico.
+                        </div>
+                    </div>
+
+                    <div class="border border-gray-200 rounded-2xl overflow-hidden shadow-sm">
+                        <button @click="active !== 8 ? active = 8 : active = null" class="w-full text-left px-8 py-6 bg-white hover:bg-fundo/50 focus:outline-none flex justify-between items-center transition-colors">
+                            <span class="font-bold text-lg text-primaria pr-4">8. A psicologia clínica atende casos de burnout e esgotamento de trabalho?</span>
+                            <svg class="w-6 h-6 text-secundaria transform transition-transform duration-300 flex-shrink-0" :class="{ 'rotate-180': active === 8 }" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </button>
+                        <div x-show="active === 8" x-collapse style="display: none;" class="px-8 pb-6 bg-white text-texto text-lg border-t border-gray-50 pt-4">
+                            Sim, oferecemos acompanhamento focado no tratamento de burnout em Palmas e na terapia para esgotamento profissional, ajudando a restaurar o equilíbrio emocional e limites saudáveis na carreira.
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- 10. CTA Final / Contato -->
+        <section id="contato" class="py-24 bg-primaria text-white relative">
+            <div class="absolute inset-0 bg-gradient-to-br from-primaria via-primaria to-gray-900 opacity-90"></div>
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                <div class="text-center max-w-4xl mx-auto">
+                    <h2 class="text-4xl sm:text-5xl font-bold mb-8 text-white font-titulo">Agende sua Consulta no Plano Diretor Sul</h2>
+                    <p class="text-xl text-white/90 mb-12 leading-relaxed">Dar o primeiro passo para cuidar da sua saúde mental é uma decisão de coragem e amor próprio. Entre em contato hoje mesmo e garanta o seu horário na agenda de atendimentos.</p>
+                    
+                    <div class="flex flex-col sm:flex-row gap-6 justify-center mb-10">
+                        <a href="https://wa.me/5563992123456" target="_blank" class="inline-flex justify-center items-center px-10 py-5 border border-transparent text-xl font-bold rounded-full text-primaria bg-white hover:bg-fundo shadow-xl hover:shadow-2xl transition-all transform hover:-translate-y-1">
+                            Falar no WhatsApp
+                        </a>
+                        <a href="tel:+5563992123456" class="inline-flex justify-center items-center px-10 py-5 border-2 border-white text-xl font-bold rounded-full text-white bg-transparent hover:bg-white hover:text-primaria transition-all">
+                            Ligar para o Consultório
+                        </a>
+                    </div>
+                    
+                    <p class="text-base font-medium text-secundaria mb-16 flex items-center justify-center gap-2">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        Atendimento personalizado • Respondemos em até 30 minutos
+                    </p>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-left bg-white/10 rounded-3xl p-10 backdrop-blur-md border border-white/20">
+                        <div class="flex gap-4">
+                            <div class="bg-white/20 p-3 rounded-xl h-fit">
+                                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                            </div>
+                            <div>
+                                <p class="text-sm text-secundaria uppercase tracking-wider mb-2 font-bold">Endereço</p>
+                                <p class="text-base">Rua Q. 603 Sul, Alameda 7, Sala 102<br>Plano Diretor Sul - CEP: 77020-024<br>Palmas - TO</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4">
+                            <div class="bg-white/20 p-3 rounded-xl h-fit">
+                                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+                            </div>
+                            <div>
+                                <p class="text-sm text-secundaria uppercase tracking-wider mb-2 font-bold">Telefone / WhatsApp</p>
+                                <p class="text-lg font-bold">(63) 99212-3456</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4">
+                            <div class="bg-white/20 p-3 rounded-xl h-fit">
+                                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                            </div>
+                            <div>
+                                <p class="text-sm text-secundaria uppercase tracking-wider mb-2 font-bold">Horário</p>
+                                <p class="text-base">Segunda a Sexta<br>das 08:00 às 17:00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- 11. Footer -->
+    <footer class="bg-gray-900 text-white pt-16 pb-8 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+                
+                <div class="md:col-span-1">
+                    <img src="assets/img/logo.png" alt="Rebeka Psicologia Clínica" class="h-12 w-auto mb-6 filter brightness-0 invert" onerror="this.style.display='none'" loading="lazy">
+                    <p class="text-xl font-bold font-titulo mb-3">Rebeka - Psicologia Clínica</p>
+                    <p class="text-sm text-gray-400 mb-3">Psicologia Clínica • Terapia de adultos</p>
+                    <p class="text-sm text-secundaria italic font-medium">Cuidar da mente é transformar a vida.</p>
+                </div>
+
+                <div class="md:col-span-1">
+                    <p class="text-lg font-bold font-titulo mb-6 text-gray-200">Navegação Rápida</p>
+                    <ul class="space-y-3 text-sm text-gray-400">
+                        <li><a href="#sobre" class="hover:text-white transition-colors">Sobre</a></li>
+                        <li><a href="#servicos" class="hover:text-white transition-colors">Serviços</a></li>
+                        <li><a href="#beneficios" class="hover:text-white transition-colors">Diferenciais</a></li>
+                        <li><a href="#faq" class="hover:text-white transition-colors">FAQ</a></li>
+                        <li><a href="#contato" class="hover:text-white transition-colors">Contato</a></li>
+                    </ul>
+                </div>
+
+                <div class="md:col-span-2">
+                    <p class="text-lg font-bold font-titulo mb-6 text-gray-200">Informações de Contato</p>
+                    <ul class="space-y-4 text-sm text-gray-400">
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 mr-3 flex-shrink-0 text-secundaria" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                            <span>Rua Q. 603 Sul, Alameda 7, Sala 102, Plano Diretor Sul - CEP: 77020-024, Palmas - TO</span>
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-5 h-5 mr-3 flex-shrink-0 text-secundaria" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+                            <span>Telefone / WhatsApp: <a href="https://wa.me/5563992123456" class="hover:text-white transition-colors">(63) 99212-3456</a></span>
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-5 h-5 mr-3 flex-shrink-0 text-secundaria" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                            <span>Instagram: <a href="https://www.instagram.com/rebekapalmas" target="_blank" class="hover:text-white transition-colors">@rebekapalmas</a></span>
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-5 h-5 mr-3 flex-shrink-0 text-secundaria" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                            <span>Horário: Segunda a Sexta, das 08:00 às 17:00</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-gray-500">
+                <p>© 2026 Rebeka - Psicologia Clínica. Todos os direitos reservados. CRP Tocantins.</p>
+                <p class="mt-4 md:mt-0">Desenvolvido por OFS Digital</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/5563992123456" target="_blank" class="whatsapp-btn" aria-label="Falar no WhatsApp">
+        <svg class="whatsapp-icon" viewBox="0 0 24 24">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+        </svg>
+    </a>
+
+</body>
+</html>
