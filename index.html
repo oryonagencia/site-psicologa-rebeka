@@ -35,8 +35,28 @@
     <link rel="preload" href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"></noscript>
 
-    <!-- Custom CSS (Tailwind Compiled) -->
-    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primaria: '#8E6A8F',      /* Ameixa suave */
+                        secundaria: '#A7B9A6',    /* Verde sálvia */
+                        terciaria: '#E7D7D7',     /* Rosa chá */
+                        nevoa: '#B9C3B4',         /* Névoa */
+                        fundo: '#F2E8E0',         /* Areia */
+                        texto: '#4A4A4A',         /* Grafite suave */
+                    },
+                    fontFamily: {
+                        titulo: ['"Playfair Display"', 'serif'],
+                        corpo: ['"Lora"', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
 
     <!-- Alpine.js -->
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
